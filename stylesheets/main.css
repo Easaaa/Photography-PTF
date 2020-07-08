@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: "Open Sans",sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/* ------ NAVBAR ------- */
+
+.bg-dark {
+  background: rgb(19, 19, 19) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background: rgb(40, 40, 40);
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler span {
+  color: white;
+  border-color: none;
+}
+
+.dropdown-menu {
+  background: #000;
+}
+
+.dropdown-item {
+  color: white;
+  text-transform: uppercase;
+}
+   .dropdown-item:hover {
+     background: rgb(40, 40, 40);
+     color: #fff;
+   }
+
+/* 
+.left-nav {
+  width: 20%;
+  float: left;
+  position: absolute;
+}
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav li {    
+  margin: 1px 0;
+  border: 1px solid #999;
+}
+.nav li a {
+  display: block;
+  line-height: 3em;
+  width: 100%;
+  text-decoration: none;
+}
+.nav li a ion-icon{
+  color: white;
+  font-size: 3.5rem;
+} */
+
+/* ------ LANDING INDEX PAGE ------ */
+
+.landing-page{
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.page-content img {
+  width: 100%;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.page-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.page-content p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.page-content a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.4s linear;
+}
+
+.page-content a:hover {
+  color: #000;
+  background: rgb(240, 255, 0);
+}
+
+@media screen and (min-width: 650px) {
+  .page-content img {
+    visibility: hidden;
+    position: absolute;
+  }
+  .landing-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/bg.jpg") no-repeat;
+    background-size: cover;
+    opacity: .5;
+    animation: anim 25s linear infinite;
+  }
+  @keyframes anim {
+    50%{
+      transform: scale(2);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+}
+
+/* ------ ABOUT ------ */
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.column-galleryIndex {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.img-galleryIndex img {
+  width: 100%;
+}
+
+.text-galleryIndex {
+  padding: 20px;
+}
+
+.text-galleryIndex h4 {
+  font-weight: 500;
+}
+
+.text-galleryIndex p {
+  letter-spacing: 1.2px;
+  padding: 20px;
+}
+
+.text-galleryIndex p a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.4s linear;
+  border: 2px solid #000;
+  color: #000;
+}
+
+    /* .text-galleryIndex p a:hover {
+      color: #000;
+      background: rgb(240, 255, 0);
+    } */
+
+@media screen and (min-width: 1000px) {
+  .column-galleryIndex {
+    grid-template-columns: 1fr 1fr;
+  }
+  .artImg {
+    order: 2;
+  }
+  .textArt {
+    order: 1;
+  }
+}
+
+/* ------ CONTACT ------  */
+
+.border-cnt {
+  border: 2px solid white;
+  margin: 0 100px;
+}
+
+.title ion-icon {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.social-cnt ion-icon {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.text-cnt p a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 850px) {
+  .border-cnt {
+    margin: 0 340px;
+  }
+} 
+
+/* ------- FOOTER ------ */
+
+footer {
+  padding: 20px 10px 20px 10px;
+  background: #000;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
+
+.powered-by a {
+  color: white;
+}
+
+.powered-by a:hover {
+  color: red;
+}

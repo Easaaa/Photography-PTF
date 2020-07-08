@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* ------ NAVBAR ------- */
+
+.bg-dark {
+  background: rgb(19, 19, 19) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background: rgb(40, 40, 40);
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler span {
+  color: white;
+  border-color: none;
+}
+
+.dropdown-menu {
+  background: #000;
+}
+
+.dropdown-item {
+  color: white;
+  text-transform: uppercase;
+}
+   .dropdown-item:hover {
+     background: rgb(40, 40, 40);
+     color: #fff;
+   }
+
+/* ------ ABOUT ------ */
+
+#about, #contact {
+  text-align: center;
+  padding: 20px;
+}
+
+#about h2, #contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.column-ab {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 20px;
+}
+
+.img-ab img {
+  width: 100%;
+}
+
+.text-ab h4 {
+  font-weight: 500;
+}
+
+.text-ab p {
+  letter-spacing: 1.2px;
+}
+
+@media screen and (min-width: 1000px) {
+  #about, #contact {
+    padding: 50px 200px 50px 200px;
+  }
+  .column-ab {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ------ CONTACT ------  */
+
+.border-cnt {
+  border: 2px solid white;
+  margin: 0 100px;
+}
+
+.title ion-icon {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.social-cnt ion-icon {
+  font-size: 4rem;
+  padding: 10px;
+  color: white;
+}
+
+.text-cnt p a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 850px) {
+  .border-cnt {
+    margin: 0 340px;
+  }
+} 
+
+/* ------- FOOTER ------ */
+
+footer {
+  padding: 20px 10px 20px 10px;
+  background: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center;
+}
+
+.powered-by a {
+  color: #000;
+}
+
+.powered-by a:hover {
+  color: red;
+}
